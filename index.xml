@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Placeholder for Everything Amazing</title>
-    <link>http://example.org/</link>
+    <link>https://gsk-gagan.github.io/site_content/</link>
     <description>Recent content on Placeholder for Everything Amazing</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://gsk-gagan.github.io/site_content/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Placeholder for Everything Amazing</title>
-    <link>http://example.org/tags/</link>
+    <link>https://gsk-gagan.github.io/site_content/tags/</link>
     <description>Recent content in Tags on Placeholder for Everything Amazing</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://gsk-gagan.github.io/site_content/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
