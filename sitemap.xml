@@ -3,22 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/post/first/</loc>
-    <lastmod>2022-02-02T20:06:24-05:00</lastmod>
+    <lastmod>2022-01-01T20:06:24-05:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
+    <lastmod>2022-02-02T22:07:41-05:00</lastmod>
+  </url><url>
+    <loc>/post/20220202/</loc>
+    <lastmod>2022-02-02T22:07:41-05:00</lastmod>
+  </url><url>
+    <loc>/tags/free/</loc>
+    <lastmod>2022-02-02T22:07:41-05:00</lastmod>
+  </url><url>
+    <loc>/tags/github/</loc>
+    <lastmod>2022-02-02T22:07:41-05:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2022-02-02T22:07:41-05:00</lastmod>
+  </url><url>
+    <loc>/tags/hugo/</loc>
+    <lastmod>2022-02-02T22:07:41-05:00</lastmod>
+  </url><url>
+    <loc>/post/</loc>
+    <lastmod>2022-02-02T22:07:41-05:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2022-02-02T22:07:41-05:00</lastmod>
+  </url><url>
+    <loc>/categories/technology/</loc>
+    <lastmod>2022-02-02T22:07:41-05:00</lastmod>
+  </url><url>
+    <loc>/categories/web/</loc>
+    <lastmod>2022-02-02T22:07:41-05:00</lastmod>
+  </url><url>
+    <loc>/tags/website/</loc>
+    <lastmod>2022-02-02T22:07:41-05:00</lastmod>
   </url><url>
     <loc>/about/</loc>
     <lastmod>2022-02-02T20:18:48-05:00</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2022-02-02T20:10:39-05:00</lastmod>
-  </url><url>
-    <loc>/post/</loc>
-    <lastmod>2022-02-02T20:10:39-05:00</lastmod>
-  </url><url>
-    <loc>/post/second/</loc>
-    <lastmod>2022-02-02T20:10:39-05:00</lastmod>
-  </url><url>
-    <loc>/categories/</loc>
-  </url><url>
-    <loc>/tags/</loc>
   </url>
 </urlset>

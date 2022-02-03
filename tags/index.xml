@@ -5,6 +5,43 @@
     <link>/tags/</link>
     <description>Recent content in Tags on Hey I&#39;m Gagan!</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Feb 2022 22:07:41 -0500</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Free</title>
+      <link>/tags/free/</link>
+      <pubDate>Wed, 02 Feb 2022 22:07:41 -0500</pubDate>
+      
+      <guid>/tags/free/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHub</title>
+      <link>/tags/github/</link>
+      <pubDate>Wed, 02 Feb 2022 22:07:41 -0500</pubDate>
+      
+      <guid>/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>/tags/hugo/</link>
+      <pubDate>Wed, 02 Feb 2022 22:07:41 -0500</pubDate>
+      
+      <guid>/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Website</title>
+      <link>/tags/website/</link>
+      <pubDate>Wed, 02 Feb 2022 22:07:41 -0500</pubDate>
+      
+      <guid>/tags/website/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
