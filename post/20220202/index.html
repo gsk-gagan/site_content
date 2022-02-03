@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Creating a Static Website and Hoisting it on GitHub // Hey I&#39;m Gagan!</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.92.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Gagandeep Singh Kaler" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.4a7ec8660f9a44b08c4da97c5f2e31b1192df1d4d0322e65c0dbbc6ecb1b863f.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Creating a Static Website and Hoisting it on GitHub"/>
+<meta name="twitter:description" content="Quick Summary So today I was able to launch and host my static website on GitHub and also link it to my custom domain name. The general idea is that by leveraging GitHub I won&rsquo;t have to pay any web hosting services and I would also have unlimited bandwidth. This also drastically simplifies the process of having your own website as you no longer have to manage or maintain a server regularly."/>
+
+    <meta property="og:title" content="Creating a Static Website and Hoisting it on GitHub" />
+<meta property="og:description" content="Quick Summary So today I was able to launch and host my static website on GitHub and also link it to my custom domain name. The general idea is that by leveraging GitHub I won&rsquo;t have to pay any web hosting services and I would also have unlimited bandwidth. This also drastically simplifies the process of having your own website as you no longer have to manage or maintain a server regularly." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/20220202/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-02-02T22:07:41-05:00" />
+<meta property="article:modified_time" content="2022-02-02T22:07:41-05:00" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="/"><img class="app-header-avatar" src="/avatar_gsk.png" alt="Gagandeep Singh Kaler" /></a>
+      <h1>Hey I&#39;m Gagan!</h1>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/about/">About</a>
+      </nav>
+      <p>If you know, you know!</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/gsk-gagan" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+          <a href="https://www.linkedin.com/in/gagandeepsinghkaler/" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-linkedin">
+  <title>LinkedIn</title>
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+</svg>
+          </a>
+        
+          <a href="https://medium.com/@gagandeep.singh.iitdelhi" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-edit">
+  <title>Medium</title>
+  <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+</svg>
+          </a>
+        
+          <a href="https://www.youtube.com/channel/UCno6Ohi6y5F2di9sW9TuLOQ" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-youtube">
+  <title>YouTube</title>
+  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+</svg>
+          </a>
+        
+          <a href="https://instagram.com/gsk_gagan" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-instagram">
+  <title>Instagram</title>
+  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Creating a Static Website and Hoisting it on GitHub</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Feb 2, 2022
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          4 min read
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="/tags/hugo/">Hugo</a>
+              <a class="tag" href="/tags/github/">GitHub</a>
+              <a class="tag" href="/tags/website/">Website</a>
+              <a class="tag" href="/tags/free/">Free</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h2 id="quick-summary">Quick Summary</h2>
+<p>So today I was able to launch and host my static website on GitHub and also link it to my custom domain name. The general idea is that by leveraging GitHub I won&rsquo;t have to pay any web hosting services and I would also have unlimited bandwidth. This also drastically simplifies the process of having your own website as you no longer have to manage or maintain a server regularly.</p>
+<p>The only downside or restriction is that only static websites can be hosted on GitHub. But with the version control system provided by Git, it would be extremely easy to add new content to the website by simply committing changes and not worrying about taking the pull from the dedicated server.</p>
+<p>For the purpose of creating static websites I leveraged Hugo framework. I&rsquo;m sure there might be other popular frameworks as well but I just started using Hugo because of its simplicity. It allows the user to specify any new content for their blogs by the specifying mark down files. So if I have a good structure in place I can just keep on adding new markdown files corresponding to all the new blog posts or any new experiment that I do.</p>
+<h2 id="motivation">Motivation</h2>
+<p>So yesterday I decided that I want to have a place where I can log my WIP projects. I don&rsquo;t want them to be out in the public on proper blog posts but at the same time I want to keep a log of all the things that I am doing. This is not only going to help me reflect on all the things that I have achieved but it can also be used to create a quick portfolio of all the skills that I&rsquo;ve gained over time.</p>
+<p>To do this I started looking into creating a simple website and hosting it somewhere on the internet. But I soon realize that there&rsquo;s no short-term cheap hosting options available. I initially decided to create a nodeJS server but soon realize that this would be overkill for just a simple content gathering system. Also the cheaper hosting options available were hard configuration to run nodeJS server and there are also several limitations because of which I had to scratch two implementations.</p>
+<p>So I started looking into hosting my own website on GitHub and then try to see if I can link my custom domain to the GitHub hosted website. Obviously I was quickly able to find out this is something which can be done easily but then I started looking into what popular frameworks I can use to build my static website. Instead of trying to create my own HTML pages I stumbled across this framework called Hugo. I stated before the advantage of you Hugo is that the user can specify their content as new markdown files. And when integrated with Git we can simply commit the newly created markdown files to add more content to our website.</p>
+<h2 id="techincal-details">Techincal Details</h2>
+<p>I believe anyone can you purchase a domain name so I&rsquo;m not going to be talking about that.</p>
+<p>Will get up you can convert any get repository into a static site. There are also well documented processes describing how you can link your custom domain name to any repository containing of static website. You basically have to provide a bunch of GitHub provided IP addresses as aliases on your domain name console.</p>
+<p>On the static website creation part that is Hugo Van can simply install it on their local machines and then quickly select from a bunch of freely available teams to quickly get up and running with the website. There are just a handful of commands which a person has to know in order to get up and running with their Hugo website. And adding any new blog post it as simple as just adding a new markdown file and in the right location. You can simply call Hugos cli command in order to do that. After you have done adding any new content you can simply generate all new content as static files which will be made available in the public folder. I basically created a submodule within the public folder so that I can just use a different Git repository as my hosted repository.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

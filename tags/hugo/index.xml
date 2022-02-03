@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Hey I&#39;m Gagan!</title>
+    <link>/tags/hugo/</link>
+    <description>Recent content in Hugo on Hey I&#39;m Gagan!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Feb 2022 22:07:41 -0500</lastBuildDate><atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating a Static Website and Hoisting it on GitHub</title>
+      <link>/post/20220202/</link>
+      <pubDate>Wed, 02 Feb 2022 22:07:41 -0500</pubDate>
+      
+      <guid>/post/20220202/</guid>
+      <description>Quick Summary So today I was able to launch and host my static website on GitHub and also link it to my custom domain name. The general idea is that by leveraging GitHub I won&amp;rsquo;t have to pay any web hosting services and I would also have unlimited bandwidth. This also drastically simplifies the process of having your own website as you no longer have to manage or maintain a server regularly.</description>
+    </item>
+    
+  </channel>
+</rss>
