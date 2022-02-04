@@ -13,7 +13,8 @@
       <pubDate>Wed, 02 Feb 2022 22:07:41 -0500</pubDate>
       
       <guid>/post/20220202/</guid>
-      <description>Quick Summary So today I was able to launch and host my static website on GitHub and also link it to my custom domain name. The general idea is that by leveraging GitHub I won&amp;rsquo;t have to pay any web hosting services and I would also have unlimited bandwidth. This also drastically simplifies the process of having your own website as you no longer have to manage or maintain a server regularly.</description>
+      <description>Quick Summary So today I was able to launch and host my static website on GitHub and also link it to my custom domain name. The general idea is that by leveraging GitHub I won&amp;rsquo;t have to pay for any web hosting services and also have unlimited bandwidth. This also drastically simplifies having your own website as you no longer have to manage or maintain a server regularly.
+The only downside or restriction is that only static websites can be hosted on GitHub.</description>
     </item>
     
   </channel>
