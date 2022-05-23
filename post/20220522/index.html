@@ -13,14 +13,12 @@
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Experimentation with StyleGAN2 - Projecting real image to artistic deep fake"/>
-<meta name="twitter:description" content="Note to self: Don&rsquo;t try to deep fake shades with old artistic paintings. You&rsquo;ll end up getting dark circles.
-Another note to self: Tame your beard man! You are no longer in the olden ages! :P
-Overview of GAN - Generative Adversarial Network GANs as the name suggest are generative ML models used to generate artificial content. They&rsquo;re popularly used to generate deep fakes, which are equivalent to real pictures. &ldquo;Adversarial Networks&rdquo; because under the hood they employ two deep neural networks."/>
+<meta name="twitter:description" content="Long lost twin!
+Overview of GAN - Generative Adversarial Network GANs as the name suggest are generative ML models used to generate artificial content. They&rsquo;re popularly used to generate deep fakes, which are equivalent to real pictures. &ldquo;Adversarial Networks&rdquo; because under the hood they employ two deep neural networks. One network is used to generate deep fakes and the other network (the adversary) is responsible for detecting deep fakes from real images."/>
 
     <meta property="og:title" content="Experimentation with StyleGAN2 - Projecting real image to artistic deep fake" />
-<meta property="og:description" content="Note to self: Don&rsquo;t try to deep fake shades with old artistic paintings. You&rsquo;ll end up getting dark circles.
-Another note to self: Tame your beard man! You are no longer in the olden ages! :P
-Overview of GAN - Generative Adversarial Network GANs as the name suggest are generative ML models used to generate artificial content. They&rsquo;re popularly used to generate deep fakes, which are equivalent to real pictures. &ldquo;Adversarial Networks&rdquo; because under the hood they employ two deep neural networks." />
+<meta property="og:description" content="Long lost twin!
+Overview of GAN - Generative Adversarial Network GANs as the name suggest are generative ML models used to generate artificial content. They&rsquo;re popularly used to generate deep fakes, which are equivalent to real pictures. &ldquo;Adversarial Networks&rdquo; because under the hood they employ two deep neural networks. One network is used to generate deep fakes and the other network (the adversary) is responsible for detecting deep fakes from real images." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/post/20220522/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-05-22T23:38:22-04:00" />
@@ -112,9 +110,8 @@ Overview of GAN - Generative Adversarial Network GANs as the name suggest are ge
       </div>
     </header>
     <div class="post-content">
-      <p><img src="/img/20220522/sample.png" alt="Artistic Deep Fake">
-<em>Note to self: Don&rsquo;t try to deep fake shades with old artistic paintings. You&rsquo;ll end up getting dark circles.</em></p>
-<p><em>Another note to self: Tame your beard man! You are no longer in the olden ages! :P</em></p>
+      <p><img src="/img/20220522/sample.jpg" alt="Artistic Deep Fake">
+<em>Long lost twin!</em></p>
 <h2 id="overview-of-gan---generative-adversarial-network">Overview of GAN - Generative Adversarial Network</h2>
 <p>GANs as the name suggest are generative ML models used to generate artificial content. They&rsquo;re popularly used to generate deep fakes, which are equivalent to real pictures. &ldquo;Adversarial Networks&rdquo; because under the hood they employ two deep neural networks. One network is used to generate deep fakes and the other network (the adversary) is responsible for detecting deep fakes from real images.</p>
 <p>As one can contemplate, to create a good GAN model, both deep neural network for generating deep fakes as well as the adversarial neural network to detect deep fakes should be equally good. If the adversary is not good, then the deep fake generating model won&rsquo;t know if it&rsquo;s really able to generate indistinguishable fakes or it&rsquo;s the adversary&rsquo;s lack of detecting which is letting it perform well. So, a well trained GAN results in being able to detect half fakes as reals and half reals as fakes.</p>
@@ -133,35 +130,57 @@ Overview of GAN - Generative Adversarial Network GANs as the name suggest are ge
 <li>We are using pre-trained <a href="https://github.com/justinpinkney/awesome-pretrained-stylegan2#painting-faces">painting faces model</a> which expects a 1024x1024 input image. Our cropping function in colab notebook should help with this. Depending on the model you might need to change the input resolution.</li>
 </ul>
 <h2 id="results">Results</h2>
+<h3 id="in-line-with-expectations">In line with expectations</h3>
+<h4 id="standard-face-dataset---long-lost-twin">Standard Face Dataset - Long lost twin?!</h4>
 
  
 <video width=50% controls autoplay loop>
-    <source src="/img/20220522/movie.mp4" type="video/mp4">
+    <source src="/img/20220522/movie_ffhq.mp4" type="video/mp4">
     Your browser does not support the video tag.  
 </video>
 
-<p>Standard Face Dataset - Long lost twin?!</p>
+<h4 id="painting-art-style---bearable-results">Painting Art Style - Bearable results!</h4>
 
  
 <video width=50% controls autoplay loop>
-    <source src="/img/20220522/movie_pass.mp4" type="video/mp4">
+    <source src="/img/20220522/movie_art.mp4" type="video/mp4">
     Your browser does not support the video tag.  
 </video>
 
-<p>Painting Art Style - Bearable results!</p>
+<ul>
+<li><em>Note to self: Don&rsquo;t try to deep fake shades with old artistic paintings. You&rsquo;ll end up getting dark circles.</em></li>
+<li><em>Another note to self: Tame your beard man! You are no longer in the olden ages! :P</em></li>
+</ul>
+<h3 id="epic-fails">Epic fails</h3>
+<h4 id="big-brain-time">Big Brain Time!</h4>
 
 
 <video width=50% controls autoplay loop>
-    <source src="/img/20220522/movie_fail.mp4" type="video/mp4">
+    <source src="/img/20220522/movie_fail1.mp4" type="video/mp4">
     Your browser does not support the video tag.  
 </video>
 
-<p>Epic Fail. Big Brain Time!
-Lack of helmet in the training data set forced the GAN to pickup a shiny pink head!</p>
-<p>(I&rsquo;m sleepy.. don&rsquo;t expect humor here!!)</p>
+<ul>
+<li>Lack of helmet in the training data set forced the GAN to pickup a shiny pink head!</li>
+</ul>
+<h4 id="whats-this-monstrosity">What&rsquo;s this monstrosity!</h4>
+
+
+<video width=50% controls autoplay loop>
+    <source src="/img/20220522/movie_fail2.mp4" type="video/mp4">
+    Your browser does not support the video tag.  
+</video>
+
+<ul>
+<li>Shows what can happen if you don&rsquo;t crop your image in the right proportions.</li>
+<li>So, centre your shit!</li>
+</ul>
 <h2 id="next-up">Next Up</h2>
-<p>We will try to create interpolation between different latent space representation of myself. Should create interesting animation videos.</p>
-<p>Maybe try to create an anime version of myself in one of the available pre-trained models.</p>
+<ul>
+<li>We will try to create interpolation between different latent space representation of myself. Should create interesting animation videos.</li>
+<li>Maybe try to create an anime version of myself in one of the available pre-trained models.</li>
+<li>Training my own GAN model.</li>
+</ul>
 
     </div>
     <div class="post-footer">

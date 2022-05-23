@@ -12,9 +12,8 @@
       <pubDate>Sun, 22 May 2022 23:38:22 -0400</pubDate>
       
       <guid>/post/20220522/</guid>
-      <description>Note to self: Don&amp;rsquo;t try to deep fake shades with old artistic paintings. You&amp;rsquo;ll end up getting dark circles.
-Another note to self: Tame your beard man! You are no longer in the olden ages! :P
-Overview of GAN - Generative Adversarial Network GANs as the name suggest are generative ML models used to generate artificial content. They&amp;rsquo;re popularly used to generate deep fakes, which are equivalent to real pictures. &amp;ldquo;Adversarial Networks&amp;rdquo; because under the hood they employ two deep neural networks.</description>
+      <description>Long lost twin!
+Overview of GAN - Generative Adversarial Network GANs as the name suggest are generative ML models used to generate artificial content. They&amp;rsquo;re popularly used to generate deep fakes, which are equivalent to real pictures. &amp;ldquo;Adversarial Networks&amp;rdquo; because under the hood they employ two deep neural networks. One network is used to generate deep fakes and the other network (the adversary) is responsible for detecting deep fakes from real images.</description>
     </item>
     
   </channel>
