@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-us">
   <head>
-    <title>Headless Connection to Raspberry Pi Zero 2 W // Hey I&#39;m Gagan!</title>
+    <title>Changing VNC Resolution (Raspberry Pi) // Hey I&#39;m Gagan!</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <meta charset="utf-8" />
     <meta name="generator" content="Hugo 0.92.1" />
@@ -12,17 +12,19 @@
 
     
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Headless Connection to Raspberry Pi Zero 2 W"/>
-<meta name="twitter:description" content="Getting Started in Headless Mode In headless mode, you are using your wifi enabled Raspberry Pi (Zero 2 W, in this case) without a screen. You will need to ssh into your raspberry pi to start using it. To get started with this you have to:
- Include a blank file named &ldquo;ssh&rdquo; at the root of your pi&rsquo;s sd card (i.e. boot drive). This tells the pi to allow ssh connection at startup."/>
+<meta name="twitter:title" content="Changing VNC Resolution (Raspberry Pi)"/>
+<meta name="twitter:description" content="Simple Instructions By default the VNC resolution is not apt. To change it, you can specify configuration in your Raspberry Pi, so that the VNC Viewer will start rendering in that.
+To change the resolution do the following in a Terminal running on your Pi (either through ssh or VNC):
+ sudo vim /boot/config.txt Then add the following below the # uncomment to force a specific HDMI mode (this will force VGA) line: hdmi_ignore_edid=0xa5000080 hdmi_group=2 hdmi_mode=85   "/>
 
-    <meta property="og:title" content="Headless Connection to Raspberry Pi Zero 2 W" />
-<meta property="og:description" content="Getting Started in Headless Mode In headless mode, you are using your wifi enabled Raspberry Pi (Zero 2 W, in this case) without a screen. You will need to ssh into your raspberry pi to start using it. To get started with this you have to:
- Include a blank file named &ldquo;ssh&rdquo; at the root of your pi&rsquo;s sd card (i.e. boot drive). This tells the pi to allow ssh connection at startup." />
+    <meta property="og:title" content="Changing VNC Resolution (Raspberry Pi)" />
+<meta property="og:description" content="Simple Instructions By default the VNC resolution is not apt. To change it, you can specify configuration in your Raspberry Pi, so that the VNC Viewer will start rendering in that.
+To change the resolution do the following in a Terminal running on your Pi (either through ssh or VNC):
+ sudo vim /boot/config.txt Then add the following below the # uncomment to force a specific HDMI mode (this will force VGA) line: hdmi_ignore_edid=0xa5000080 hdmi_group=2 hdmi_mode=85   " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/post/20220205/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2022-02-05T11:56:02-05:00" />
-<meta property="article:modified_time" content="2022-02-05T11:56:02-05:00" />
+<meta property="og:url" content="/post/20220206/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-02-06T09:53:54-05:00" />
+<meta property="article:modified_time" content="2022-02-06T09:53:54-05:00" />
 
 
 
@@ -81,21 +83,21 @@
       
   <article class="post">
     <header class="post-header">
-      <h1 class ="post-title">Headless Connection to Raspberry Pi Zero 2 W</h1>
+      <h1 class ="post-title">Changing VNC Resolution (Raspberry Pi)</h1>
       <div class="post-meta">
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
   <title>calendar</title>
   <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
 </svg>
-          Feb 5, 2022
+          Feb 6, 2022
         </div>
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
   <title>clock</title>
   <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
 </svg>
-          3 min read
+          1 min read
         </div>
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
@@ -110,47 +112,16 @@
       </div>
     </header>
     <div class="post-content">
-      <h2 id="getting-started-in-headless-mode">Getting Started in Headless Mode</h2>
-<p>In headless mode, you are using your wifi enabled Raspberry Pi (Zero 2 W, in this case) without a screen. You will need to ssh into your raspberry pi to start using it. To get started with this you have to:</p>
+      <h2 id="simple-instructions">Simple Instructions</h2>
+<p>By default the VNC resolution is not apt. To change it, you can specify configuration in your Raspberry Pi, so that the VNC Viewer will start rendering in that.</p>
+<p>To change the resolution do the following in a Terminal running on your Pi (either through ssh or VNC):</p>
 <ul>
-<li>Include a blank file named &ldquo;ssh&rdquo; at the root of your pi&rsquo;s sd card (i.e. boot drive). This tells the pi to allow ssh connection at startup.</li>
-<li>Include a &ldquo;wpa_supplicant.conf&rdquo; to provide your wifi network&rsquo;s credentials. This should be a 2.4GHz network to begin with. You can later update the firmware to connect with 5GHz networks. The contents of the file should be like:</li>
-</ul>
-<pre tabindex="0"><code>ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-update_config=1
-country=US
-
-network={
-	ssid=&quot;network_name&quot;
-	psk=&quot;network_password&quot;
-	key_mgmt=WPA-PSK
-}
-</code></pre><ul>
-<li>Ideally if your master computer is on the same network as the pi, then you can try issuing the command <code>ping raspberrypi</code> to check if the configuration is working. Or find the devicename <code>raspberrypi</code> in your router&rsquo;s connection list.</li>
-<li>SSH into your pi using <code>ssh pi@raspberrypi</code> with default password as <code>raspberry</code>.</li>
-</ul>
-<p>Now you have access to your pi.</p>
-<h3 id="general-post-connection-steps">General Post Connection Steps</h3>
-<ul>
-<li>Update password: <code>passwd</code>. Alternatively use <code>raspi-config</code>. I&rsquo;ve updated password using my general algorithm.</li>
-<li>(Optional) Elevate your user to super user: <code>sudo su -</code>.</li>
-<li>Update and upgrade debian packages: <code>apt-get update &amp;&amp; apt-get upgrade</code>. This updates the list of packages available and then upgrades the packages in one go.</li>
-<li>Enable VNC (Virtual Network Computing): To use GUI from pi via vnc protocol. Simply go to <code>raspi-config</code> then navigate to: Interface Options &gt; VNC and enable it.
-<ul>
-<li>Download a VNC client for your OS. I&rsquo;ve used <a href="https://www.realvnc.com/en/connect/download/viewer/">VNC Viewer from RealVNC</a></li>
-<li>Get your pi&rsquo;s ip address on your wifi network. You can either obtain it from your router&rsquo;s admin panel. Or simply type <code>ifconfig</code> in your pi (as connected via ssh). Then look at wlan0 &gt; inet.</li>
-<li>In VNC Viewer simply enter this ip address to connect.
-<img src="/img/20220205/vnc.jpg" alt="Pi Desktop on VNC Viewer"></li>
-</ul>
-</li>
-<li>Shutdown: <code>shutdown -h now</code> or <code>poweroff</code></li>
-</ul>
-<h2 id="issues-getting-started">Issues Getting Started</h2>
-<p>While trying to start the pi in headless mode one can face certain issues. Below are some issues I faced and solution to get things working.</p>
-<ul>
-<li><em>Blinking LED</em>: After boot if the LED is still blinking, it could be attributed to power supply. Simply try using a different adapter if not using the official one (as in my case)</li>
-<li><em>Unable to connect to ssh</em>: From wpa_supplicant.conf you can see that you specified key_mgmt as WPA-PSK. Check in your routers admin panel if your router&rsquo;s key management is done via this. For my case it was WPA2-PSK, and updating the wpa_supplicant.conf didn&rsquo;t worked. So, I simply changed the router&rsquo;s key management to &ldquo;WPA-PSK/WPA2-PSK&rdquo;. Go into the router&rsquo;s admin panel to do so.</li>
-<li><em>Unable to ping raspberrypi</em>: If you don&rsquo;t get any response for <code>ping raspberrypi</code>, then you can try obtaining the ip address of the pi using your routers admin panel. You can then type <code>ping your_ip_address</code> (which for my case was <code>ping 192.168.1.22</code>) to check if the connection is working.</li>
+<li><code>sudo vim /boot/config.txt</code></li>
+<li>Then add the following below the <code># uncomment to force a specific HDMI mode (this will force VGA)</code> line:
+<pre tabindex="0"><code>hdmi_ignore_edid=0xa5000080
+hdmi_group=2
+hdmi_mode=85
+</code></pre><pre tabindex="0"><code></code></pre></li>
 </ul>
 
     </div>

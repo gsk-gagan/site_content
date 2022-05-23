@@ -6,7 +6,7 @@
     <description>Recent content on Hey I&#39;m Gagan!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Feb 2022 11:56:02 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Feb 2022 09:53:54 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Welcome to My Site!</title>
       <link>/post/first/</link>
@@ -16,6 +16,17 @@
       <description>The idea of this site is to keep posting all the things that I do with minimal efforts. I believe I am simply going to keep a log of all the things I do an a regular basis.
 I think there&amp;rsquo;ll be a retrospective section as well. But for current phase I will simply reference all my projects since Jan 2022.
 *Want to know more about me? Visit About Me.</description>
+    </item>
+    
+    <item>
+      <title>Changing VNC Resolution (Raspberry Pi)</title>
+      <link>/post/20220206/</link>
+      <pubDate>Sun, 06 Feb 2022 09:53:54 -0500</pubDate>
+      
+      <guid>/post/20220206/</guid>
+      <description>Simple Instructions By default the VNC resolution is not apt. To change it, you can specify configuration in your Raspberry Pi, so that the VNC Viewer will start rendering in that.
+To change the resolution do the following in a Terminal running on your Pi (either through ssh or VNC):
+ sudo vim /boot/config.txt Then add the following below the # uncomment to force a specific HDMI mode (this will force VGA) line: hdmi_ignore_edid=0xa5000080 hdmi_group=2 hdmi_mode=85   </description>
     </item>
     
     <item>
@@ -44,7 +55,7 @@ The only downside or restriction is that only static websites can be hosted on G
       <pubDate>Wed, 02 Feb 2022 20:18:48 -0500</pubDate>
       
       <guid>/about/</guid>
-      <description>If only words could describe! Being cheesey with yourself is one of the easiest ways to laugh in your own company!!</description>
+      <description>If only words could describe! Being cheesey with yourself is one of the easiest ways to enjoy your company!!</description>
     </item>
     
   </channel>
