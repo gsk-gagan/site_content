@@ -6,7 +6,43 @@
     <description>Recent content in Tags on Hey I&#39;m Gagan!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Feb 2022 09:53:54 -0500</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 May 2022 23:38:22 -0400</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>/tags/ai/</link>
+      <pubDate>Sun, 22 May 2022 23:38:22 -0400</pubDate>
+      
+      <guid>/tags/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GAN</title>
+      <link>/tags/gan/</link>
+      <pubDate>Sun, 22 May 2022 23:38:22 -0400</pubDate>
+      
+      <guid>/tags/gan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ML</title>
+      <link>/tags/ml/</link>
+      <pubDate>Sun, 22 May 2022 23:38:22 -0400</pubDate>
+      
+      <guid>/tags/ml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>StyleGAN2</title>
+      <link>/tags/stylegan2/</link>
+      <pubDate>Sun, 22 May 2022 23:38:22 -0400</pubDate>
+      
+      <guid>/tags/stylegan2/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Microcontroller</title>
       <link>/tags/microcontroller/</link>

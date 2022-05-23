@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GAN on Hey I&#39;m Gagan!</title>
+    <link>/tags/gan/</link>
+    <description>Recent content in GAN on Hey I&#39;m Gagan!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 May 2022 23:38:22 -0400</lastBuildDate><atom:link href="/tags/gan/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Experimentation with StyleGAN2 - Projecting real image to artistic deep fake</title>
+      <link>/post/20220522/</link>
+      <pubDate>Sun, 22 May 2022 23:38:22 -0400</pubDate>
+      
+      <guid>/post/20220522/</guid>
+      <description>Note to self: Don&amp;rsquo;t try to deep fake shades with old artistic paintings. You&amp;rsquo;ll end up getting dark circles.
+Another note to self: Tame your beard man! You are no longer in the olden ages! :P
+Overview of GAN - Generative Adversarial Network GANs as the name suggest are generative ML models used to generate artificial content. They&amp;rsquo;re popularly used to generate deep fakes, which are equivalent to real pictures. &amp;ldquo;Adversarial Networks&amp;rdquo; because under the hood they employ two deep neural networks.</description>
+    </item>
+    
+  </channel>
+</rss>

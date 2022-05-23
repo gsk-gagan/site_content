@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Experimentation with StyleGAN2 - Projecting real image to artistic deep fake // Hey I&#39;m Gagan!</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.92.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Gagandeep Singh Kaler" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.4a7ec8660f9a44b08c4da97c5f2e31b1192df1d4d0322e65c0dbbc6ecb1b863f.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Experimentation with StyleGAN2 - Projecting real image to artistic deep fake"/>
+<meta name="twitter:description" content="Note to self: Don&rsquo;t try to deep fake shades with old artistic paintings. You&rsquo;ll end up getting dark circles.
+Another note to self: Tame your beard man! You are no longer in the olden ages! :P
+Overview of GAN - Generative Adversarial Network GANs as the name suggest are generative ML models used to generate artificial content. They&rsquo;re popularly used to generate deep fakes, which are equivalent to real pictures. &ldquo;Adversarial Networks&rdquo; because under the hood they employ two deep neural networks."/>
+
+    <meta property="og:title" content="Experimentation with StyleGAN2 - Projecting real image to artistic deep fake" />
+<meta property="og:description" content="Note to self: Don&rsquo;t try to deep fake shades with old artistic paintings. You&rsquo;ll end up getting dark circles.
+Another note to self: Tame your beard man! You are no longer in the olden ages! :P
+Overview of GAN - Generative Adversarial Network GANs as the name suggest are generative ML models used to generate artificial content. They&rsquo;re popularly used to generate deep fakes, which are equivalent to real pictures. &ldquo;Adversarial Networks&rdquo; because under the hood they employ two deep neural networks." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/20220522/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-05-22T23:38:22-04:00" />
+<meta property="article:modified_time" content="2022-05-22T23:38:22-04:00" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="/"><img class="app-header-avatar" src="/avatar_gsk.png" alt="Gagandeep Singh Kaler" /></a>
+      <h1>Hey I&#39;m Gagan!</h1>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/about/">About</a>
+      </nav>
+      <p>If you know, you know!</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/gsk-gagan" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+          <a href="https://www.linkedin.com/in/gagandeepsinghkaler/" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-linkedin">
+  <title>LinkedIn</title>
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+</svg>
+          </a>
+        
+          <a href="https://medium.com/@gagandeep.singh.iitdelhi" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-edit">
+  <title>Medium</title>
+  <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+</svg>
+          </a>
+        
+          <a href="https://www.youtube.com/channel/UCno6Ohi6y5F2di9sW9TuLOQ" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-youtube">
+  <title>YouTube</title>
+  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+</svg>
+          </a>
+        
+          <a href="https://instagram.com/gsk_gagan" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-instagram">
+  <title>Instagram</title>
+  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Experimentation with StyleGAN2 - Projecting real image to artistic deep fake</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          May 22, 2022
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          3 min read
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="/tags/ai/">AI</a>
+              <a class="tag" href="/tags/ml/">ML</a>
+              <a class="tag" href="/tags/gan/">GAN</a>
+              <a class="tag" href="/tags/stylegan2/">StyleGAN2</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p><img src="/img/20220522/sample.png" alt="Artistic Deep Fake">
+<em>Note to self: Don&rsquo;t try to deep fake shades with old artistic paintings. You&rsquo;ll end up getting dark circles.</em></p>
+<p><em>Another note to self: Tame your beard man! You are no longer in the olden ages! :P</em></p>
+<h2 id="overview-of-gan---generative-adversarial-network">Overview of GAN - Generative Adversarial Network</h2>
+<p>GANs as the name suggest are generative ML models used to generate artificial content. They&rsquo;re popularly used to generate deep fakes, which are equivalent to real pictures. &ldquo;Adversarial Networks&rdquo; because under the hood they employ two deep neural networks. One network is used to generate deep fakes and the other network (the adversary) is responsible for detecting deep fakes from real images.</p>
+<p>As one can contemplate, to create a good GAN model, both deep neural network for generating deep fakes as well as the adversarial neural network to detect deep fakes should be equally good. If the adversary is not good, then the deep fake generating model won&rsquo;t know if it&rsquo;s really able to generate indistinguishable fakes or it&rsquo;s the adversary&rsquo;s lack of detecting which is letting it perform well. So, a well trained GAN results in being able to detect half fakes as reals and half reals as fakes.</p>
+<h2 id="getting-hands-dirty">Getting hands dirty</h2>
+<p>Similar to every AI/ML model, best way to get up and running is to leverage existing pre-trained models. We leverage <a href="https://github.com/NVlabs/stylegan2">NVIDIA&rsquo;s StyleGAN2 model</a> as our GAN structure and use a bunch of <a href="https://github.com/justinpinkney/awesome-pretrained-stylegan2">pre-trained models</a> to quickly generate deep fakes.</p>
+<h3 id="setup">Setup</h3>
+<p>Devil&rsquo;s in the details, but this blog is not meant to be that. So, anyone interested can try to run this <a href="https://colab.research.google.com/drive/1Bd3I8Au1CZC0dyQKqxfZ_QCUq1GDdJsx?usp=sharing">colab notebook</a> to see how to use pre-existing GAN models and project one&rsquo;s own image to a deep fake space.</p>
+<p>Below are some interesting points:</p>
+<ul>
+<li>You need NVIDIA GPUs to run the model, so <a href="https://colab.research.google.com">Google&rsquo;s Colab</a> is our friend here. You can choose a free GPU based machine to run your ML models.</li>
+<li>Most StyleGAN2 models are trained using faces which have eyes centered and photo cropped in a specific manner. To get good results one needs to crop their own real image in the same manner.
+<ul>
+<li>To aid with this, we leverage another (simpler) deep neural network to identify location of eyes and use that to crop one&rsquo;s image in the right dimensions.</li>
+</ul>
+</li>
+<li>We are using pre-trained <a href="https://github.com/justinpinkney/awesome-pretrained-stylegan2#painting-faces">painting faces model</a> which expects a 1024x1024 input image. Our cropping function in colab notebook should help with this. Depending on the model you might need to change the input resolution.</li>
+</ul>
+<h2 id="results">Results</h2>
+
+ 
+<video width=50% controls autoplay loop>
+    <source src="/img/20220522/movie_pass.mp4" type="video/mp4">
+    Your browser does not support the video tag.  
+</video>
+
+<p>Bearable results!</p>
+
+
+<video width=50% controls autoplay loop>
+    <source src="/img/20220522/movie_fail.mp4" type="video/mp4">
+    Your browser does not support the video tag.  
+</video>
+
+<p>Epic Fail. Big Brain Time!
+Lack of helmet in the training data set forced the GAN to pickup a shiny pink head!</p>
+<p>(I&rsquo;m sleepy.. don&rsquo;t expect humor here!!)</p>
+<h2 id="next-up">Next Up</h2>
+<p>We will try to create interpolation between different latent space representation of myself. Should create interesting animation videos.</p>
+<p>Maybe try to create an anime version of myself in one of the available pre-trained models.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

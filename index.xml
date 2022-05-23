@@ -6,16 +6,16 @@
     <description>Recent content on Hey I&#39;m Gagan!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Feb 2022 09:53:54 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 May 2022 23:38:22 -0400</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Welcome to My Site!</title>
-      <link>/post/first/</link>
-      <pubDate>Sat, 01 Jan 2022 20:06:24 -0500</pubDate>
+      <title>Experimentation with StyleGAN2 - Projecting real image to artistic deep fake</title>
+      <link>/post/20220522/</link>
+      <pubDate>Sun, 22 May 2022 23:38:22 -0400</pubDate>
       
-      <guid>/post/first/</guid>
-      <description>The idea of this site is to keep posting all the things that I do with minimal efforts. I believe I am simply going to keep a log of all the things I do an a regular basis.
-I think there&amp;rsquo;ll be a retrospective section as well. But for current phase I will simply reference all my projects since Jan 2022.
-*Want to know more about me? Visit About Me.</description>
+      <guid>/post/20220522/</guid>
+      <description>Note to self: Don&amp;rsquo;t try to deep fake shades with old artistic paintings. You&amp;rsquo;ll end up getting dark circles.
+Another note to self: Tame your beard man! You are no longer in the olden ages! :P
+Overview of GAN - Generative Adversarial Network GANs as the name suggest are generative ML models used to generate artificial content. They&amp;rsquo;re popularly used to generate deep fakes, which are equivalent to real pictures. &amp;ldquo;Adversarial Networks&amp;rdquo; because under the hood they employ two deep neural networks.</description>
     </item>
     
     <item>
@@ -56,6 +56,17 @@ The only downside or restriction is that only static websites can be hosted on G
       
       <guid>/about/</guid>
       <description>If only words could describe! Being cheesey with yourself is one of the easiest ways to enjoy your company!!</description>
+    </item>
+    
+    <item>
+      <title>Welcome to My Site!</title>
+      <link>/post/first/</link>
+      <pubDate>Sat, 01 Jan 2022 20:06:24 -0500</pubDate>
+      
+      <guid>/post/first/</guid>
+      <description>The idea of this site is to keep posting all the things that I do with minimal efforts. I believe I am simply going to keep a log of all the things I do an a regular basis.
+I think there&amp;rsquo;ll be a retrospective section as well. But for current phase I will simply reference all my projects since Jan 2022.
+*Want to know more about me? Visit About Me.</description>
     </item>
     
   </channel>
