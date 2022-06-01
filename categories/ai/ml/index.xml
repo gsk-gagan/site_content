@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="/categories/ai/ml/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Chasing Autonomity Part 1 - Hardware Foundations for Reinforcement Learnt Self-balancing Bot</title>
+      <link>/post/20220601/</link>
+      <pubDate>Wed, 01 Jun 2022 11:54:48 -0400</pubDate>
+      
+      <guid>/post/20220601/</guid>
+      <description>That&amp;rsquo;s It?
+The idea is to create a self balancing robot, which should learn to balance itself without explicitly coding in the logic to do so. In a traditional sense we need to apply reinforcement learning model to let the robot train itself. Instead of going into the details of how that can be accomplished, here I lay down the foundations of the hardware setup required to achieve this.
+General Hardware Overview On a high level we have the following:</description>
+    </item>
+    
+    <item>
       <title>Experimentation with StyleGAN2 - Projecting real image to artistic deep fake</title>
       <link>/post/20220522/</link>
       <pubDate>Sun, 22 May 2022 23:38:22 -0400</pubDate>
