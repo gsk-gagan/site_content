@@ -6,7 +6,16 @@
     <description>Recent content in Categories on Hey I&#39;m Gagan!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Feb 2022 09:53:54 -0500</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 May 2022 20:57:23 -0400</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fitness</title>
+      <link>/categories/fitness/</link>
+      <pubDate>Tue, 31 May 2022 20:57:23 -0400</pubDate>
+      
+      <guid>/categories/fitness/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Technology</title>
       <link>/categories/technology/</link>
